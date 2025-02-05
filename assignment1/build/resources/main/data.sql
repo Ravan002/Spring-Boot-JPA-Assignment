@@ -1,0 +1,17 @@
+INSERT INTO COURSES(course_name, teacher_name, course_description, credit) VALUES('WM1', 'Nureddin','asds', 6)
+INSERT INTO COURSES(course_name, teacher_name, course_description, credit) VALUES('WM2', 'Nureddin','asasdahgsdfhasgdfhasgfdhagsfdhgasfhdgfashgdfhasgdfhasgfdhfashdgfahsdgfhasdgasfdahsdds', 6)
+INSERT INTO COURSES(course_name, teacher_name, course_description, credit) VALUES('Software Engineering', 'Araz','asds', 2)
+INSERT INTO COURSES(course_name, teacher_name, course_description, credit) VALUES('Math', 'Yaqgub','asds', 6)
+INSERT INTO COURSES(course_name, teacher_name, course_description, credit) VALUES('Physic lab', 'Gulmammad','asds', 2)
+
+INSERT INTO STUDENTS(name, surname, major,date_of_birth) VALUES('Ravan', 'Mammadov','Computer Engineering','2003-10-30')
+INSERT INTO STUDENTS(name, surname, major,date_of_birth) VALUES('Kimse', 'Mammadov','Computer Science','2004-9-20')
+INSERT INTO STUDENTS(name, surname, major,date_of_birth) VALUES('Ravan', 'Wurbanov','Computer Science','2000-11-30')
+INSERT INTO STUDENTS(name, surname, major,date_of_birth) VALUES('Ravan', 'Mammadov','Information Technology','2003-10-30')
+INSERT INTO STUDENTS(name, surname, major,date_of_birth) VALUES('Ravan', 'Mammadov','Computer Engineering','2003-10-30')
+
+INSERT INTO STUDENT_COURSE(STUDENT_ID,COURSE_ID) VALUES(1,1)
+INSERT INTO STUDENT_COURSE(STUDENT_ID,COURSE_ID) VALUES(1,2)
+INSERT INTO STUDENT_COURSE(STUDENT_ID,COURSE_ID) VALUES(2,3)
+INSERT INTO STUDENT_COURSE(STUDENT_ID,COURSE_ID) VALUES(1,4)
+INSERT INTO STUDENT_COURSE(STUDENT_ID,COURSE_ID) VALUES(2,4)

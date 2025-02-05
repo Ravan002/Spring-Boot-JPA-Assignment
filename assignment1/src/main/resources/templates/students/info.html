@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Students</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+<div>
+    <div class="student-info">
+        <h1>Student Information</h1>
+        <p th:text="|Name: ${student.name}|"></p>
+        <p th:text="|Surname: ${student.surname}|"></p>
+        <p th:text="|Birth Date: ${student.dateOfBirth}|"></p>
+        <p th:text="|Major: ${student.major}|"></p>
+    </div>
+    <div class="dersler">
+        <h2>Selected Courses</h2>
+        <table border="1px" class="dersler-table">
+            <tr>
+                <th>ID</th>
+                <th>Course Name</th>
+                <th>Teacher Name</th>
+                <th>Number of students</th>
+                <th>Credits</th>
+                <th>Actions</th>
+            </tr>
+            <tr th:if="${#lists.isEmpty(student.courses)}">
+                <td colspan="4">The course list is empty</td>
+            </tr>
+            <tr th:each="course : ${student.courses}">
+                <td th:text="${course.id}">ID</td>
+                <td th:text="${course.courseName}">Course Name</td>
+                <td th:text="${course.teacherName}">Teacher Name</td>
+                <td th:text="${course.numberOfStudents}">Number of Students</td>
+                <td th:text="${course.credit}">credit</td>
+                <td>
+                    <th:block th:with="id=${course.id}">
+                        <a th:href="@{'/student/drop/' + ${student.id} + '/course/' + ${id}}">Drop</a>
+                    </th:block>
+                </td>
+            </tr>
+        </table>
+        <div class="yeni-ders">
+            <a th:href="@{'/course/takeCourse/'+${student.id}}" class="yeni-ders-butonu">Take new Course</a>
+        </div>
+    </div>
+</div>
+<a th:href="@{'/student'}" class="add-student-button">Back to Student List</a>
+</body>
+</html>

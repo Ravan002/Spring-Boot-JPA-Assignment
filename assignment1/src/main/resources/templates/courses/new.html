@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+    <title>Create new course</title>
+</head>
+<body>
+<h2>Create new course</h2>
+<form action="#" method="POST" th:action="@{/course/}" th:object="${course}">
+    <input type="text" th:field="*{courseName}" placeholder="Course name"/> <br/>
+    <input type="text" th:field="*{teacherName}" placeholder="Teacher name"/> <br/>
+    <input type="text" th:field="*{courseDescription}" placeholder="Course description"/> <br/>
+    <input type="number" th:field="*{credit}" placeholder="Credit"/> <br/>
+    <input type="submit" value="Add Course"/>
+</form>
+<a th:href="@{/course}" class="add-student-button">Back to List</a>
+</body>
+</html>

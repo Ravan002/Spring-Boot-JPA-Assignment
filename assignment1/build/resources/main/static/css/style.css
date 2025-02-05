@@ -1,0 +1,152 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100vh;
+}
+
+.student-info {
+  width: 50%;
+  text-align: left;
+}
+.student-info p{
+    font-size:20px;
+    font-weight:bold;
+}
+
+.dersler {
+  border: 1px solid #ccc;
+  padding: 20px;
+}
+.dersler-table{
+    margin-top:10px;
+}
+
+
+.drop-butonu {
+  padding: 5px 10px;
+  background-color: #ccc;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.yeni-ders {
+  margin-top: 20px;
+}
+
+.yeni-ders-butonu {
+  float: right;
+  padding: 10px 20px;
+  background-color: #ccc;
+  border: 1px solid #333;
+  border-radius: 5px;
+  cursor: pointer;
+}
+/* Reset default browser styles for a more consistent base */
+* {
+  margin: 0;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+/* Main table styling */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+/* Styling for the "Add Student" button */
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer; /* Add cursor pointer for better user experience */
+}
+
+.button:hover {
+  background-color: #3e8e41;
+}
+
+/* Basic reset styles */
+* {
+  margin: 0;
+  padding: 2% 3%;
+  box-sizing: border-box;
+}
+
+/* Styling for headings */
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Search form styling */
+form {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+form label {
+  flex: 1;
+}
+
+form input, form button {
+  flex: 1;
+  border: 1px solid #ccc;
+  margin-right: 10px;
+}
+
+/* Styling for "Add Student" button */
+.add-student-button {
+  display: block;
+  margin-top: 20px;
+  background-color: #4CAF50; /* Green */
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.add-student-button:hover {
+  background-color: #3e8e41;
+}
+
+
+nav {
+  display: flex;  /* Arrange links horizontally */
+  justify-content: space-between;  /* Distribute links evenly */
+  padding: 10px 20px;
+  background-color: #f2f2f2;  /* Light background for contrast */
+  border-bottom: 1px solid #ccc;  /* Add a subtle border */
+}
+
+nav a {
+  text-decoration: none;  /* Remove underline from links */
+  font-size:30px;
+  color: #333;  /* Define link text color */
+  padding: 5px 10px;  /* Add some padding for better spacing */
+}
+
+nav a:hover {
+  background-color: #ddd;  /* Change background color on hover */
+}
+
